@@ -2,7 +2,7 @@
 | -------- | -------- |--------|--------|
 | ASP.NET | .NET Framework | Azure Web App, Virtual Machine| |
 
-
+modifica
 # ASP.NET MVC application
 
 Sample ASP.NET MVC application built using Visual Studio 2017.
