@@ -35,8 +35,3 @@ steps:
     pip install -r python/bottle/webapp/Application/requirements.txt
   displayName: 'Install dependencies'
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    cd python/bottle/webapp/Application/
-    pytest
-  displayName: 'pytest'
