@@ -34,13 +34,14 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  displayName: 'Esecuzione test'
+- task: VSTest@2
   inputs:
-    command: 'test'
-    projects: 'dotnet/aspnet/webappWithTests/Application/SampleWebApplication.UnitTests/*.csproj'
-    arguments: '--configuration Release --no-build'
-    testRunTitle: 'TEST'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+    searchFolder: 'dotnet/aspnet/webappWithTests/Application/SampleWebApplication.UnitTests'
 
 - task: PublishBuildArtifacts@1
   inputs:
