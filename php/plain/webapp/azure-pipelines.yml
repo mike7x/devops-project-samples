@@ -10,6 +10,7 @@ trigger:
  paths:
     include:
       - php/plain/webapp/Application/*
+      
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -23,8 +24,5 @@ steps:
     rootFolderOrFile: 'php/plain/webapp/Application/'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: 'php/plain/webapp/Application/$(Build.BuildId).zip'
+    archiveFile: '(Build.BuildId).zip'
     replaceExistingArchive: true
-
-    
-- task: PublishBuildArtifacts@1
