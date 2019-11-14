@@ -4,9 +4,14 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
- branches:
+  branches:
     include:
-    - master
+      - master
+  paths:
+    include:
+      - 'dotnet/aspnetcore/webAppOnLinux/*'
+
+
 
 pool:
   vmImage: 'windows-latest'
