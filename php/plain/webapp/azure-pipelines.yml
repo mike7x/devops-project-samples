@@ -18,11 +18,8 @@ variables:
   phpVersion: 7.2
 
 steps:
-
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: 'php/plain/webapp/Application/'
+    rootFolderOrFile: 'php/plain/webapp/Application/*'
     includeRootFolder: false
-    archiveType: 'zip'
-    archiveFile: '(Build.BuildId).zip'
-    replaceExistingArchive: true
+- task: PublishBuildArtifacts@1
