@@ -20,8 +20,8 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '/php/plain/webapp/Application/'
+    rootFolderOrFile: 'php/plain/webapp/Application/'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '/php/plain/webapp/Application/$(Build.BuildId).zip'
+    archiveFile: 'php/plain/webapp/Application/$(Build.BuildId).zip'
     replaceExistingArchive: true
