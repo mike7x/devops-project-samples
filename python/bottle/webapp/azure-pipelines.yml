@@ -37,5 +37,6 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
+    cd python/bottle/webapp/Application/
     pytest
   displayName: 'pytest'
