@@ -9,7 +9,7 @@ trigger:
        - master
  paths:
     include:
-      - php/plain/webapp/Application/
+      - php/plain/webapp/Application/*
 pool:
   vmImage: 'ubuntu-latest'
 
