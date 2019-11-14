@@ -2,6 +2,8 @@
 | -------- | --------|--------|
 | HTML |  Azure Web App, Virtual Machine| |
 
+[![Build Status](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_apis/build/status/Html%20-%20webapp?branchName=master)](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_build/latest?definitionId=14&branchName=master)
+
 # Sample HTML website 
 
 Sample HTML/CSS web app that you can deploy to Azure. 
