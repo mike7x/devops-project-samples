@@ -18,10 +18,9 @@ variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
   GOROOT: '/usr/local/go1.11' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
-  modulePath: '$(build.repository.name)/go/plain/webapp/Application' # Path to the module's code
+  modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)/tree/master/go/plain/webapp/Application' # Path to the module's code
 
 steps:
-- script: grep -nr "*.go" *
 - script: |
     mkdir -p '$(GOBIN)'
     mkdir -p '$(GOPATH)/pkg'
