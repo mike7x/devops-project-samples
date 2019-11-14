@@ -4,9 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
- branches:
+  branches:
     include:
       - master
+  paths:
+    include:
+      - 'dotnet/aspnetcore/functionApp/*'
 
 
 pool:
