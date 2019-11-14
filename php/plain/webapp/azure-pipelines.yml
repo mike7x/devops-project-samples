@@ -25,3 +25,6 @@ steps:
     archiveType: 'zip'
     archiveFile: 'php/plain/webapp/Application/$(Build.BuildId).zip'
     replaceExistingArchive: true
+
+    
+- task: PublishBuildArtifacts@1
