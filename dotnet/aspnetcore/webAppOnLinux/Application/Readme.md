@@ -2,6 +2,7 @@
 | -------- | -------- |--------|--------|
 | ASP.NET Core | .NET Core 1.1 | Azure Web App, Virtual Machines |
 
+[![Build Status](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_apis/build/status/Dotnet%20-%20aspnetcore%20-%20webappOnLinux?branchName=master)](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_build/latest?definitionId=7&branchName=master)
 
 # ASP.NET Core MVC application 
 
