@@ -2,6 +2,7 @@
 | -------- | -------- |--------|--------|
 | ASP.NET | .NET Framework | Azure Web App, Virtual Machine| |
 
+[![Build Status](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_apis/build/status/Dotnet%20%E2%80%93%20aspnet%20%E2%80%93%20mssqldb?branchName=master)](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_build/latest?definitionId=5&branchName=master)
 
 # ASP.NET MVC application
 
