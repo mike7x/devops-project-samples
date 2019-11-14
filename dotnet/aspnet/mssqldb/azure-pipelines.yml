@@ -4,9 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
 trigger:
- branches:
+  branches:
     include:
       - master
+  paths:
+    include:
+      - dotnet/aspnet/mssqldb/*
 
 pool:
   vmImage: 'windows-latest'
