@@ -18,7 +18,6 @@ variables:
   solution: 'dotnet/aspnet/mssqldbWithTests/Application/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  System.DefaultWorkingDirectory: 'dotnet/aspnet/mssqldbWithTests/Application/SampleWebApplication.UnitTests/'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -47,6 +46,6 @@ steps:
       **\*test*.dll
       !**\*TestAdapter.dll
       !**\obj\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    searchFolder: '$(System.DefaultWorkingDirectory)/dotnet/aspnet/mssqldbWithTests/Application/SampleWebApplication.UnitTests'
 
 
