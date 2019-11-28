@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '0c543c12-9067-4fda-946b-abd1c46dd516'
-  imageRepository: 'mikexdevopsprojectsamples'
+  imageRepository: 'mikexdevopsprojectsamplespython'
   containerRegistry: 'mikepregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/python/django/container/Application/Dockerfile'
   tag: '$(Build.BuildId)'
@@ -36,4 +36,5 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
+         latest
           $(tag)
